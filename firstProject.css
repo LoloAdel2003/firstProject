@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: League Spartan;
+}
+
+
+
+
+.container {
+    position: absolute;
+    top: 75px;
+
+
+}
+
+#bottom-mobile {
+    position: absolute;
+    top: 695px;
+}
+
+header {
+    font-size: 36px;
+    font-weight: 800;
+    white-space: wrap;
+    color: hsl(300, 43%, 22%);
+    text-align-last: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.content {
+    font-size: 19px;
+    font-weight: 500;
+    white-space: wrap;
+    text-align: center;
+    padding: 31px 20px 20px 20px;
+    color: hsl(303, 10%, 53%);
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+
+}
+
+.rowA,
+.rowB,
+.rowC {
+    margin: 20px;
+    text-align: center;
+    background-color: hsl(300, 24%, 96%);
+    height: 70px;
+    border-radius: 8px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 600;
+    ;
+
+
+}
+
+.rowC {
+    margin-bottom: 30px;
+}
+
+.comment>div {
+    margin: 20px;
+
+    height: 234px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    position: relative;
+}
+
+
+
+.photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-size: contain;
+    background-color: red;
+    position: absolute;
+    top: 37px;
+    left: 30px;
+}
+
+.p1 {
+    background-image: url(firstProjectImg/image-colton.jpg);
+
+
+}
+
+.p2 {
+    background-image: url(firstProjectImg/image-irene.jpg);
+}
+
+.p3 {
+    background-image: url(firstProjectImg/image-anne.jpg);
+}
+
+
+.up {
+    position: absolute;
+    top: 38px;
+    left: 99px;
+}
+
+.name1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-size: 17px;
+    padding-bottom: 5px;
+
+}
+
+.name2 {
+    color: hsl(333, 80%, 67%);
+}
+
+.word {
+    position: absolute;
+    top: 48px;
+    padding: 52px 36px 36px 31px;
+    color: hsl(0, 0%, 100%);
+    font-size: 17px;
+    font-weight: 500;
+    word-spacing: 1px;
+    line-height: 21px;
+}
+
+#top-desktop,
+#bottom-desktop {
+    visibility: hidden;
+}
+
+@media screen and (min-width:1440px) {
+    #top-moblie {
+        display: none;
+    }
+
+    #bottom-mobile {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 327px 350px;
+        padding: 53px;
+    }
+
+    #top-desktop {
+        visibility: visible;
+
+    }
+
+    #bottom-desktop {
+        visibility: visible;
+
+        transform: translate(355px, -211px);
+    }
+
+
+
+
+    header {
+        font-size: 50px;
+        padding-left: 119px;
+        padding-right: 119px;
+        text-align-last: start;
+    }
+
+    .content {
+        padding-left: 113px;
+        text-align: start;
+        font-size: 23px;
+    }
+
+    .rowA {
+        margin-left: 50px;
+        margin-right: 100px;
+
+    }
+
+    .rowB {
+        margin-left: 100px;
+        margin-right: 50px;
+    }
+
+    .rowC {
+        margin-left: 150px;
+    }
+
+    .star {
+        display: inline-flex;
+
+
+    }
+
+    .cont1 {
+        display: inline-block;
+        padding-top: 30px;
+
+    }
+
+    .comment {
+        grid-column: 1/3;
+        margin-left: 76px;
+    }
+
+    .comment>div {
+        width: 372px;
+        float: left;
+        height: 240px;
+
+    }
+
+
+    #two {
+        margin-top: 60px;
+    }
+
+    #three {
+        margin-top: 100px;
+    }
+
+    .star>iframe {
+        padding-top: 4px;
+    }
+
+}
